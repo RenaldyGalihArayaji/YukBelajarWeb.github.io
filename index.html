@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/fontawesome/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Shopp</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h4 class="navbar-brand"><i class="fab fa-shopify fs-2 brand-icon"></i><span>SHOPP</span></h4>
+        <div class="search">
+          <form class="d-flex ms-auto">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background: rgb(255, 254, 254);">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featureds">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="#" class="text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-shopping-cart fs-5 me-2 icon"></i></a>
+            <a href="#" class="text-secondary" ><i class="fas fa-heart fs-5 me-2 icon"></i></a>
+            <a href="#" class="text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fas fa-user-circle fs-5 me-2 icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+      <!-- Modal Keranjang-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body ">
+              <table class="table text-center ">
+                <thead>
+                  <tr>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Produk</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="img/gambar1.jpg" alt="" width="50"></td>
+                     <td>Nama Product</td>
+                     <td>Rp.50.000</td>
+                     <td>5</td>
+                     <td><strong>Rp.250.000</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/gambar2.jpg" alt="" width="50"></td>
+                     <td>Nama Product</td>
+                     <td>Rp.50.000</td>
+                     <td>1</td>
+                     <td><strong>Rp.100.000</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/gambar3.jpg" alt="" width="50"></td>
+                     <td>Nama Product</td>
+                     <td>Rp.50.000</td>
+                     <td>6</td>
+                     <td><strong>Rp.300.000</strong></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/gambar4.jpg" alt="" width="50"></td>
+                     <td>Nama Product</td>
+                     <td>Rp.50.000</td>
+                     <td>1</td>
+                     <td><strong>Rp.50.000</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="btn btn-primary">Check Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Keranjang -->
+
+      <!-- Modal Login-->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-body ">
+              <div class="text-center mt-4">
+              <i class="far fa-user-circle fs-1"></i>
+              </div>
+              <form action="" method="post" class="px-5 py-3">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Email Anda">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan Password Anda">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                  <button type="submit" class="btn btn-primary">Registrasi</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Login -->
+
+
+    <!-- Banner -->
+    <section id="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active slide1">
+            <div class="container" style="margin-top: 23vh">
+              <h5 class="text-light">Upto 50% Off</h5>
+              <h1 class="text-dark display-4"><strong>Woman's Fashion</strong></h1>
+              <button class="btn btn-primary">Shop New</button>
+            </div>
+          </div>
+          <div class="carousel-item slide2">
+            <div class="container" style="margin-top: 23vh">
+              <h5 class="text-light">Upto 50% Off</h5>
+              <h1 class="text-dark display-4"><strong>Man's Fashion</strong></h1>
+              <button class="btn btn-primary">Shop New</button>
+            </div>
+          </div>
+          <div class="carousel-item slide3">
+            <div class="container" style="margin-top: 23vh">
+              <h5 class="text-light">Upto 50% Off</h5>
+              <h1 class="text-dark display-4"><strong>Kid's Fashion</strong></h1>
+              <button class="btn btn-primary">Shop New</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- promo -->
+    <section id="promo" class="mt-2 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card cards1 py-3 shadow-sm">
+              <div class="row">
+                <div class="col-5">
+                  <img src="img/4.png" alt="" width="250" class="imgs" />
+                </div>
+                <div class="col-7 mt-5">
+                  <h4 class="text-secondary">Super Sale</h4>
+                  <h2 class="text-dark display-6"><strong>Upto 50% Off</strong></h2>
+                  <button class="btn btn-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card cards2 py-3 shadow-sm">
+              <div class="row">
+                <div class="col-5">
+                  <img src="img/5.png" alt="" width="250" class="imgs" />
+                </div>
+                <div class="col-7 mt-5">
+                  <h4 class="text-secondary">Super Sale</h4>
+                  <h2 class="text-dark display-6"><strong>Upto 50% Off</strong></h2>
+                  <button class="btn btn-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Promo -->
+
+    <!-- Product -->
+    <section id="product" class="mt-2 py-5">
+      <div class="container">
+        <h2 class="text-center">
+          <strong>Exclusive <span style="color: rgb(11, 132, 202)">Product</span></strong>
+        </h2>
+
+        <!-- btn -->
+        <div class="text-center py-4">
+          <button id="allBtn" class="btn btn-outline-primary active" onclick="showAll()">All</button>
+          <button id="newBtn" class="btn btn-outline-primary" onclick="showNew()">New Product</button>
+          <button id="sellerBtn" class="btn btn-outline-primary" onclick="showSeller()">Best Sellers</button>
+          <button id="featuredBtn" class="btn btn-outline-primary" onclick="showFeatured()">Featured</button>
+          <button id="spesialBtn" class="btn btn-outline-primary" onclick="showSpesial()">Spesial Product</button>
+        </div>
+        <!-- End btn -->
+
+        <!-- isi product -->
+        <div id="all">
+          <div class="row">
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="fashion.html" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered">
+                <img src="img/gambar12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="new">
+          <div class="row">
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="seller">
+          <div class="row justify-content-center">
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="featured">
+          <div class="row justify-content-center">
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar8.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="spesial">
+          <div class="row justify-content-center">
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-2 p-3">
+              <div class="card border-2 hovered shadow-sm">
+                <img src="img/gambar12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <!-- End isi Product -->
+      </div>
+    </section>
+    <!-- End Product -->
+
+    <!-- featured -->
+    <section id="featureds" class="mt-2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <strong>Featured <span style="color: rgb(11, 132, 202)">Product</span></strong>
+        </h2>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar10.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-2 shadow-sm">
+                <img src="img/gambar6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title">Name Product</h6>
+                  <p class="card-text">
+                    <strong>Rp.50.000</strong
+                    ><span class="ms-2"
+                      ><del><em>Rp.100.000</em></del></span
+                    >
+                  </p>
+                  <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Check Out</a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End featured -->
+
+    <!-- review -->
+    <section id="review" class="mt-2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <strong>Client's<span style="color: rgb(11, 132, 202)" class="ms-2">Review</span></strong>
+        </h2>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Ahmad</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Salman</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Ridho</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Alex</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Kamal</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Ayu</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-center p-3 shadow-sm">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae praesentium similique iusto nesciunt quibusdam nobis. Soluta esse autem omnis tempore maiores repellendus ab aliquam quia?</p>
+                <h5>Bella</h5>
+                <p class="text-danger">Happy Client</p>
+                <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End review -->
+
+    <!-- Contact -->
+    <section id="contact" class="mt-2 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <strong>Contact<span style="color: rgb(11, 132, 202)" class="ms-2">Us</span></strong>
+        </h2>
+
+        <div class="row">
+          <div class="col-md-4">
+              <div class="card text-center p-3 mb-3 shadow-sm">
+                <div class="icon-service1 d-flex align-items-center justify-content-center mb-3" >
+                <i class="fas fa-map-marker-alt fs-3"></i>
+              </div>
+                <h5><b>Address</b></h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, commodi.</p>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card text-center p-3 mb-3 shadow-sm">
+                <div class="icon-service2 d-flex align-items-center justify-content-center mb-3" >
+                  <i class="far fa-envelope fs-3"></i>
+              </div>
+                <h5><b>Email</b></h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, commodi.</p>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card text-center p-3 mb-3 shadow-sm">
+                <div class="icon-service2 d-flex align-items-center justify-content-center mb-3" >
+                  <i class="fas fa-phone fs-3"></i>
+              </div>
+                <h5><b>Phone</b></h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, commodi.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card p-4 shadow-sm mb-3">
+              <form class="row g-3">
+                <h3><b>GET IN TOUCH</b></h3>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Number">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Subject">
+              </div>
+              <div class="col-12">
+                <textarea type="text" class="form-control" id="inputAddress" placeholder="Your Message"></textarea>
+              </div>  
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31667.280094250633!2d109.31328032836718!3d-7.193970589564469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff02cd2a78431%3A0x5027a76e3564d70!2sBelik%2C%20Pemalang%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1634198059707!5m2!1sen!2sid" width="540" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <section id="footer" class="mt-2 py-5">
+      <div class="container">
+        <div class="row " style="border-bottom: solid rgb(110, 110, 110) 2px;">
+          <div class="col-md-3">
+            <h4><b>About Us</b></h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum?</p>
+          </div>
+          <div class="col-md-3 ">
+            <h4><b>Category</b></h4>
+            <ul class="me-auto" style="margin: 0;padding: 0;">
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark" ><i class="fas fa-arrow-circle-right text-danger me-2"></i>Men</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Women</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Kids</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Best Seller</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>New Product</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 ">
+            <h4><b>Quick Links</b></h4>
+            <ul class="me-auto" style="margin: 0;padding: 0;">
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark" ><i class="fas fa-arrow-circle-right text-danger me-2"></i>Home</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Product</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Featured</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Review</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 ">
+            <h4><b>Useful Links</b></h4>
+            <ul class="me-auto" style="margin: 0;padding: 0;">
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark" ><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Account</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Order</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Listing</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Sell Now</a></li>
+              <li style="list-style: none;"><a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>New Offers</a></li>
+            </ul>
+          </div>
+          <div class="d-inline text-center mt-5 mb-3">
+          <a href="#" class="text-secondary" ><i class="fab fa-facebook-f fs-3 me-3 f-icons" ></i></a>
+          <a href="#" class="text-secondary"><i class="fab fa-twitter fs-3 me-3 f-icons"></i></a>
+          <a href="#" class="text-secondary"><i class="fab fa-instagram fs-3 me-3 f-icons"></i></a>
+          <a href="#" class="text-secondary"><i class="fab fa-youtube fs-3 f-icons"></i></a>
+          </div>
+        </div>
+        <div class="teks text-center mt-3">
+          <i class="far fa-copyright me-2"></i><span>Copyright @ 2021 BY<strong> <span class="text-danger">Renaldy</span></strong> </span>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var allBtn = $("#allBtn");
+      var newBtn = $("#newBtn");
+      var sellerBtn = $("#sellerBtn");
+      var featuredBtn = $("#featuredBtn");
+      var spesialBtn = $("#spesialBtn");
+
+      var all = $("#all");
+      var news = $("#new");
+      var seller = $("#seller");
+      var featured = $("#featured");
+      var spesial = $("#spesial");
+
+      news.hide();
+      seller.hide();
+      featured.hide();
+      spesial.hide();
+
+      function showAll() {
+        allBtn.addClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.show(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showNew() {
+        allBtn.removeClass("active");
+        newBtn.addClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.show(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showSeller() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.addClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.show(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showFeatured() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.addClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.show(1000);
+        spesial.hide(1000);
+      }
+      function showSpesial() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.addClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.show(1000);
+      }
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/fontawesome/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Shopp</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h4 class="navbar-brand"><i class="fab fa-shopify fs-2 brand-icon"></i><span>SHOPP</span></h4>
+        <div class="search">
+          <form class="d-flex ms-auto">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background: rgb(255, 254, 254)">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contact</a>
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="#" class="text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-shopping-cart fs-5 me-2 icon"></i></a>
+            <a href="#" class="text-secondary"><i class="fas fa-heart fs-5 me-2 icon"></i></a>
+            <a href="#" class="text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fas fa-user-circle fs-5 me-2 icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Modal Keranjang-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Gambar</th>
+                  <th scope="col">Produk</th>
+                  <th scope="col">Harga</th>
+                  <th scope="col">Jumlah</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="img/gambar1.jpg" alt="" width="50" /></td>
+                  <td>Nama Product</td>
+                  <td>Rp.50.000</td>
+                  <td>5</td>
+                  <td><strong>Rp.250.000</strong></td>
+                </tr>
+                <tr>
+                  <td><img src="img/gambar2.jpg" alt="" width="50" /></td>
+                  <td>Nama Product</td>
+                  <td>Rp.50.000</td>
+                  <td>1</td>
+                  <td><strong>Rp.100.000</strong></td>
+                </tr>
+                <tr>
+                  <td><img src="img/gambar3.jpg" alt="" width="50" /></td>
+                  <td>Nama Product</td>
+                  <td>Rp.50.000</td>
+                  <td>6</td>
+                  <td><strong>Rp.300.000</strong></td>
+                </tr>
+                <tr>
+                  <td><img src="img/gambar4.jpg" alt="" width="50" /></td>
+                  <td>Nama Product</td>
+                  <td>Rp.50.000</td>
+                  <td>1</td>
+                  <td><strong>Rp.50.000</strong></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary">Check Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Keranjang -->
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="text-center mt-4">
+              <i class="far fa-user-circle fs-1"></i>
+            </div>
+            <form action="" method="post" class="px-5 py-3">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Email Anda" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan Password Anda" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+              <button type="submit" class="btn btn-primary">Registrasi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Login -->
+
+    <!-- Detail -->
+    <section id="detail" class="mt-5 py-5">
+      <div class="container">
+        <div class="col-md">
+          <div class="row">
+            <div class="col-md-5 px-4">
+              <img src="img/gambar1.jpg" class="img-fluid img-thumbnail mb-5" alt="..." />
+            </div>
+            <div class="col-md-7 px-4">
+              <h3 class="mb-2">Name Product</h3>
+              <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+              <h4>Rp.50.000</h4>
+              <h6>Detail Produk</h6>
+              <p style="text-align: justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos cupiditate obcaecati sapiente alias voluptatum quasi quidem perferendis sunt illum explicabo, ratione quia praesentium facere earum in at est excepturi! Eum,
+                architecto nostrum? Consequatur, et ab! Officiis id laboriosam veritatis facere! Ab quasi praesentium quaerat natus excepturi eveniet, temporibus illum esse?
+              </p>
+              <h6 class="mt-3">pengiriman</h6>
+              <p><i class="fas fa-map-marker-alt me-2 text-primary"></i>dikirim dari <b>Bogor</b></p>
+              <p><i class="fas fa-truck me-2 text-primary"></i>Ongkir Reguler <b>12Rb - 15Rb </b></p>
+              <form class="row g-3">
+                <div class="col-md-5">
+                  <label for="inputState" class="form-label"><h6>Color</h6></label>
+                  <select id="inputState" class="form-select">
+                    <option selected>--- Color ---</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Brown</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+                <div class="col-md-5">
+                  <label for="inputState" class="form-label"><h6>Size</h6></label>
+                  <select id="inputState" class="form-select">
+                    <option selected>--- Size ---</option>
+                    <option>Small ( S )</option>
+                    <option>Medium ( M )</option>
+                    <option>Large ( L )</option>
+                    <option>Extra Large ( XL )</option>
+                    <option>Extra Extra Large ( XXL )</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label"><h6>Kwantitas</h6></label>
+                  <input type="number" class="form-control" id="inputZip" />
+                </div>
+              </form>
+              <button class="btn btn-primary mt-3"><i class="fas fa-shopping-cart me-2"></i>Masukan Keranjang</button>
+              <button class="btn btn-primary mt-3">Beli</button>
+            </div>
+            <ul class="nav nav-pills mb-3 mt-5 px-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Riviews</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active px-3 text-dark" style="text-align: justify" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, corrupti? At incidunt quia omnis quidem! Voluptatem facilis cumque et provident quam perferendis nihil quo autem sint eum, labore repudiandae harum consequatur
+                  architecto illum impedit? Laborum magni corrupti facere. Fuga, molestias? Laboriosam eius distinctio, voluptate dolores vero velit quam, dignissimos voluptas perferendis hic tempore ullam voluptates ipsam doloremque maiores nam,
+                  accusantium eos voluptatibus soluta voluptatum blanditiis cum! Cum repellat laborum, numquam ad facilis eos officia doloribus omnis ut voluptate corporis, inventore nisi, accusantium aspernatur quod quos enim praesentium. Eum sint
+                  maxime deserunt ut blanditiis sunt ab et, quaerat, perspiciatis, totam fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio error amet facere exercitationem, recusandae sint consectetur cumque neque, vitae hic,
+                  similique accusantium iusto dignissimos architecto quae dolore illum perferendis fugit ea nostrum illo. Laudantium quos perferendis fugit commodi sint! Sunt quis perspiciatis pariatur vitae blanditiis dicta iste, est id excepturi
+                  distinctio asperiores, sequi repudiandae odio quia eaque nihil fuga. Laborum, vero vitae! Nam, dignissimos! Ullam amet iste vitae molestiae? In tempore perferendis repellat officia quia? Corrupti tempore iusto, ab dolores quibusdam
+                  similique, ullam consectetur amet accusamus animi aliquid esse laboriosam vel corporis, dolorem laborum ut fugit quia minus quis? Necessitatibus!
+                </p>
+              </div>
+              <div class="tab-pane fade px-3 text-dark" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <form class="px-3">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="saran" class="form-label">Comment</label>
+                    <textarea type="text" class="form-control" id="saran"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Detain -->
+
+    <!-- Footer -->
+    <section id="footer" class="mt-2 py-5">
+      <div class="container">
+        <div class="row" style="border-bottom: solid rgb(110, 110, 110) 2px">
+          <div class="col-md-3">
+            <h4><b>About Us</b></h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum?</p>
+          </div>
+          <div class="col-md-3">
+            <h4><b>Category</b></h4>
+            <ul class="me-auto" style="margin: 0; padding: 0">
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Men</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Women</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Kids</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Best Seller</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>New Product</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4><b>Quick Links</b></h4>
+            <ul class="me-auto" style="margin: 0; padding: 0">
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Home</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Product</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Featured</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Review</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4><b>Useful Links</b></h4>
+            <ul class="me-auto" style="margin: 0; padding: 0">
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Account</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Order</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>My Listing</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>Sell Now</a>
+              </li>
+              <li style="list-style: none">
+                <a href="#" class="text-decoration-none text-dark"><i class="fas fa-arrow-circle-right text-danger me-2"></i>New Offers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-inline text-center mt-5 mb-3">
+            <a href="#" class="text-secondary"><i class="fab fa-facebook-f fs-3 me-3 f-icons"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-twitter fs-3 me-3 f-icons"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-instagram fs-3 me-3 f-icons"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-youtube fs-3 f-icons"></i></a>
+          </div>
+        </div>
+        <div class="teks text-center mt-3">
+          <i class="far fa-copyright me-2"></i
+          ><span
+            >Copyright @ 2021 BY<strong> <span class="text-danger">Renaldy</span></strong>
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var allBtn = $("#allBtn");
+      var newBtn = $("#newBtn");
+      var sellerBtn = $("#sellerBtn");
+      var featuredBtn = $("#featuredBtn");
+      var spesialBtn = $("#spesialBtn");
+
+      var all = $("#all");
+      var news = $("#new");
+      var seller = $("#seller");
+      var featured = $("#featured");
+      var spesial = $("#spesial");
+
+      news.hide();
+      seller.hide();
+      featured.hide();
+      spesial.hide();
+
+      function showAll() {
+        allBtn.addClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.show(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showNew() {
+        allBtn.removeClass("active");
+        newBtn.addClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.show(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showSeller() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.addClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.show(1000);
+        featured.hide(1000);
+        spesial.hide(1000);
+      }
+      function showFeatured() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.addClass("active");
+        spesialBtn.removeClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.show(1000);
+        spesial.hide(1000);
+      }
+      function showSpesial() {
+        allBtn.removeClass("active");
+        newBtn.removeClass("active");
+        sellerBtn.removeClass("active");
+        featuredBtn.removeClass("active");
+        spesialBtn.addClass("active");
+
+        all.hide(1000);
+        news.hide(1000);
+        seller.hide(1000);
+        featured.hide(1000);
+        spesial.show(1000);
+      }
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
